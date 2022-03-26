@@ -11,8 +11,8 @@ def nacvSearch(stock_code_list):
          #pbr 구하기
          pbr = cells[7].string
          per = code[3]
-         pcr = float(code[4])/float(code[1])
-         psr = float(code[5]) / float(code[1])
+         pcr = float(code[1])/float(code[4])
+         psr = float(code[1])/float(code[5])
          if(float(pbr)<=0.2):
              continue
          data.append([code[0],pbr,per,pcr,psr])

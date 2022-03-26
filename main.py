@@ -6,9 +6,10 @@ from subDS import subCpSvrNew7224
 from stockinfo import stockList,financialInfo
 from stocksearch import nacvSearch
 from pandas import DataFrame
+from yahoofin import getSp500
 import numpy as np
 if __name__ == "__main__":
-
+    '''
     m_InfoList = [0,4,20, 67,124,123, 70, 71, 74, 75, 76, 77, 78, 79, 80, 82, 86, 87, 88, 89, 90, 91, 92, 93, 95, 96, 98, 99, 100,
                   101, 102, 103, 104, 105, 106, 107, 109, 110, 111]
     customlist = stockList()
@@ -32,3 +33,6 @@ if __name__ == "__main__":
     df['PSR_RANK'] = df['PSR'].rank(ascending=True)
 
     df.to_csv('subCpSvr7224.csv')
+    '''
+
+    getSp500()
